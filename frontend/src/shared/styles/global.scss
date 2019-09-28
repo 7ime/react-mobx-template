@@ -1,0 +1,58 @@
+@import "./toolbox/colors";
+@import "./toolbox/transitions";
+@import "./typography/typography";
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('~@fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('~@fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('~@fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('~@fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: none;
+  outline: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+*:not(input):not(textarea) {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+input, textarea {
+  &::-webkit-input-placeholder {color: $dark-30}
+  &:-moz-placeholder          {color: $dark-30}
+  &:-moz-placeholder           {color: $dark-30}
+  &:-ms-input-placeholder      {color: $dark-30}
+
+  &:focus::-webkit-input-placeholder {color: transparent}
+  &:focus::-moz-placeholder          {color: transparent}
+  &:focus:-moz-placeholder           {color: transparent}
+  &:focus:-ms-input-placeholder      {color: transparent}
+}

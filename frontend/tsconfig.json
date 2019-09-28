@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false,
+//    "resolveJsonModule": true,
+    // "isolatedModules": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "typeRoots": [
+      "node_modules/@types",
+      "src/common/types"
+    ],
+    "paths": {
+      "@fonts/*": [
+        "./src/fonts/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@images/*": [
+        "./src/images/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "types": [
+    "typePatches"
+  ]
+}
